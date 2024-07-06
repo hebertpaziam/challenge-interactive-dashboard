@@ -1,9 +1,11 @@
-import { ISale } from '@/interfaces/sales.interface';
+import { ISale } from "@/interfaces/sales.interface";
 
 export const fetchSales = async (): Promise<ISale[]> => {
   try {
-    const response = await fetch("/data/sales.data.json", { next: { revalidate: 3600 } });
-    
+    const response = await fetch("/data/sales.data.json", {
+      next: { revalidate: 3600 },
+    });
+
     if (!response.ok) {
       throw new Error(response.statusText);
     }

@@ -1,7 +1,7 @@
-'use client';
-import { useEffect } from 'react';
+"use client";
+import { useEffect } from "react";
 
-import { fetchEmployees } from '@/api/employees.api';
+import { fetchEmployees } from "@/api/employees.api";
 
 export default function Home() {
   useEffect(() => {

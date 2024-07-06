@@ -1,5 +1,5 @@
-import { ColorEnum } from '@/enums/color.enum';
-import { DepartmentCategoryEnum } from '@/enums/department-category.enum';
+import { ColorEnum } from "@/enums/color.enum";
+import { DepartmentCategoryEnum } from "@/enums/department-category.enum";
 
 export interface ISale {
   id: number;
@@ -10,6 +10,6 @@ export interface ISale {
   mes: number;
   ano: number;
   categoria: DepartmentCategoryEnum;
-  cor: ColorEnum
+  cor: ColorEnum;
   fabricante: string;
 }

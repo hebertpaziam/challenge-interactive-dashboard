@@ -1,4 +1,4 @@
-import { ColorEnum } from '@/enums/color.enum';
+import { ColorEnum } from "@/enums/color.enum";
 
 export interface IEmployee {
   id: number;
