@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useEffect, useState } from 'react';
 
 import { SelectField } from './SelectField';
@@ -16,7 +16,7 @@ export const Filters = ({ onChange }: FiltersProps) => {
     onChange({ sumTerm, viewTerm, detailTerm });
 
     console.log({ sumTerm, viewTerm, detailTerm });
-  }, [sumTerm, viewTerm, detailTerm]);
+  }, [sumTerm, viewTerm, detailTerm, onChange]);
 
   return (
     <form className="flex gap-3">
@@ -25,10 +25,10 @@ export const Filters = ({ onChange }: FiltersProps) => {
         value={sumTerm}
         onChange={setSumTerm}
         options={[
-          { value: "sum", label: "Soma" },
-          { value: "average", label: "Media" },
-          { value: "max", label: "Max" },
-          { value: "min", label: "Min" },
+          { value: 'sum', label: 'Soma' },
+          { value: 'average', label: 'Media' },
+          { value: 'max', label: 'Max' },
+          { value: 'min', label: 'Min' },
         ]}
       />
       <SelectField
@@ -36,10 +36,10 @@ export const Filters = ({ onChange }: FiltersProps) => {
         value={viewTerm}
         onChange={setViewTerm}
         options={[
-          { value: "sum", label: "Soma" },
-          { value: "average", label: "Media" },
-          { value: "max", label: "Max" },
-          { value: "min", label: "Min" },
+          { value: 'sum', label: 'Soma' },
+          { value: 'average', label: 'Media' },
+          { value: 'max', label: 'Max' },
+          { value: 'min', label: 'Min' },
         ]}
       />
       <SelectField
@@ -47,10 +47,10 @@ export const Filters = ({ onChange }: FiltersProps) => {
         value={detailTerm}
         onChange={setDetailTerm}
         options={[
-          { value: "sum", label: "Soma" },
-          { value: "average", label: "Media" },
-          { value: "max", label: "Max" },
-          { value: "min", label: "Min" },
+          { value: 'sum', label: 'Soma' },
+          { value: 'average', label: 'Media' },
+          { value: 'max', label: 'Max' },
+          { value: 'min', label: 'Min' },
         ]}
       />
     </form>

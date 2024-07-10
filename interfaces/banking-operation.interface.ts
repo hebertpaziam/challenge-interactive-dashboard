@@ -1,6 +1,6 @@
-import { BankingOperationCategoryEnum } from "@/enums/banking-operation-category.enum";
-import { BankingOperationTypeEnum } from "@/enums/banking-operation-type.enum";
-import { ColorEnum } from "@/enums/color.enum";
+import { BankingOperationCategoryEnum } from '@/enums/banking-operation-category.enum';
+import { BankingOperationTypeEnum } from '@/enums/banking-operation-type.enum';
+import { ColorEnum } from '@/enums/color.enum';
 
 export interface IBankingOperation {
   id: number;

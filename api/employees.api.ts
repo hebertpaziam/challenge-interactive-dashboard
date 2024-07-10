@@ -1,8 +1,8 @@
-import { IEmployee } from "@/interfaces/employee.interface";
+import { IEmployee } from '@/interfaces/employee.interface';
 
 export const fetchEmployees = async (): Promise<IEmployee[]> => {
   try {
-    const response = await fetch("../data/employees.data.json", {
+    const response = await fetch('../data/employees.data.json', {
       next: { revalidate: 3600 },
     });
 

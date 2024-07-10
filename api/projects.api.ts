@@ -1,8 +1,8 @@
-import { IProject } from "@/interfaces/project.interface";
+import { IProject } from '@/interfaces/project.interface';
 
 export const fetchProjects = async (): Promise<IProject[]> => {
   try {
-    const response = await fetch("/data/projects.data.json", {
+    const response = await fetch('/data/projects.data.json', {
       next: { revalidate: 3600 },
     });
 

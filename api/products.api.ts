@@ -1,8 +1,8 @@
-import { IProduct } from "@/interfaces/product.interface";
+import { IProduct } from '@/interfaces/product.interface';
 
 export const fetchProducts = async (): Promise<IProduct[]> => {
   try {
-    const response = await fetch("/data/products.data.json", {
+    const response = await fetch('/data/products.data.json', {
       next: { revalidate: 3600 },
     });
 

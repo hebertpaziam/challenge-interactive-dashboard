@@ -1,5 +1,5 @@
-import { ColorEnum } from "@/enums/color.enum";
-import { DepartmentCategoryEnum } from "@/enums/department-category.enum";
+import { ColorEnum } from '@/enums/color.enum';
+import { DepartmentCategoryEnum } from '@/enums/department-category.enum';
 
 export interface IProduct {
   id: number;
